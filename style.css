@@ -1,0 +1,16 @@
+img {
+    width: 50%;
+    margin: 1em;
+}
+
+header {
+    background-color: lightblue;
+}
+
+body {
+    background-color: aqua;
+}
+
+h2 {
+    background-color: bisque;
+}
