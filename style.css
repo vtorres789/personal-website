@@ -11,6 +11,79 @@ body {
     background-color: aqua;
 }
 
-h2 {
-    background-color: bisque;
+h1 {
+    text-align: center;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 1em;
+ }
+
+ .portfolio > div {
+    border-style: solid;
+    padding: 0.5em;
+ }
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    li {
+        display: block;
+        border-style: solid;
+        text-align: center;
+    }
+
+    li:hover, a:hover {
+        background-color: blue;
+        color: white;
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    li {
+        display: block;
+        border-style: solid;
+        text-align: center;
+    }
+
+    li:hover, a:hover {
+        background-color: blue;
+        color: white;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    li {
+        display: inline;
+    }
+
+    ul {
+        text-align: right;
+    }
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    li {
+        display: inline;
+    }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    li {
+        display: inline;
+    }
+ } 
+
