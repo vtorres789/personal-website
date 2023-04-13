@@ -1,7 +1,7 @@
-img {
+/* img {
     width: 50%;
     margin: 1em;
-}
+} */
 
 header {
     background-color: lightblue;
@@ -33,8 +33,8 @@ ul {
     padding: 0.5em;
  }
 
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
+ /* Extra small and small devices (phones, 768px and down) */
+ @media only screen and (max-width: 768px) {
     li {
         display: block;
         border-style: solid;
@@ -45,19 +45,19 @@ ul {
         background-color: blue;
         color: white;
     }
- }
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
-    li {
+    img {
         display: block;
-        border-style: solid;
-        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
     }
 
-    li:hover, a:hover {
-        background-color: blue;
-        color: white;
+    #about > div {
+        border-style: solid;
+        margin: 0.5em;
+        padding: 0.5em;
     }
  }
  
@@ -69,18 +69,31 @@ ul {
 
     ul {
         text-align: right;
+        border-style: solid;
+    }
+
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #about > div {
+        width: 23em;
+        margin: 1em;
+        padding: 0.5em;
+        border-style: dashed;
+    }
+
+    img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
  }
  
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-    li {
-        display: inline;
-    }
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
+ /* Large and Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
     li {
         display: inline;
