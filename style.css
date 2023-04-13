@@ -8,7 +8,7 @@ header {
 }
 
 body {
-    background-color: aqua;
+    background-color: lightgray;
 }
 
 h1 {
@@ -26,11 +26,14 @@ ul {
     flex-direction: column;
     border-style: solid;
     padding: 1em;
+    background-color: blue;
  }
 
  .portfolio > div {
     border-style: solid;
     padding: 0.5em;
+    margin: 0.5em;
+    background-color: lightblue;
  }
 
  /* Extra small and small devices (phones, 768px and down) */
@@ -91,12 +94,9 @@ ul {
         margin-right: auto;
     }
 
- }
- 
- /* Large and Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-    li {
-        display: inline;
+    .portfolio {
+        flex-direction: row;
     }
- } 
+
+ }
 
