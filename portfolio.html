@@ -10,32 +10,46 @@
 <body>
     <header>
         <h1>Portfolio</h1>
-        <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="about.html"><li>About</li></a>
-            <a href="portfolio.html"><li>Portfolio</li></a>
-        </ul>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
     </header>
     <h2>Work Done</h2>
-    <h3>Ethical Hacking Home Lab</h3>
-    <p>
+    <div class="portfolio">
+        <h3>Ethical Hacking Home Lab</h3>
+        <p>
         Scope: Gain root access into a user&apos;s computer, using all available open source ethical hacking tools.	
-    </p>
+        </p>
+    </div>
     <div class="portfolio" id="p1">
         <div>Used Metasploit to search for and apply known exploits to a target machine after enumerating it.</div>
         <div>Successfully used an exploit with a specific payload to set up a reverse shell and escalate privileges.</div>
         <div>Tools used: Metasploit, VirtualBox, Linux, command line, nmap</div>
     </div>
-    <br>
-    <h3>Digital Forensics and Incident Response Home Lab</h3>
-    <p>
+    <div class="portfolio">
+        <h3>Digital Forensics and Incident Response Home Lab</h3>
+        <p>
         Scope: Discover the hidden message (or “flag”) in the data dump provided by the scenario&apos;s seized computer.
-    </p>
+        </p>
+    </div>
+    
     <div class="portfolio" id="p2">
         <div>Loaded a forensic image and analyzed the memory and pagefile of the system to look for clues to locate strange or out of place data.</div>
         <div>Discovered the hidden message after several layers of steps. Followed a sequence one would take in real forensics.</div>
         <div>Used forensics tools such as volatility, bulk-extractor, Autopsy on the provided memdump, pagefile, and the OVA of the hacker&apos;s computer</div>
     </div>
-    <a href="index.html">Home</a>
+    <div class="footer">
+        <div>
+            <a href="https://twitter.com"><img src="img/Twitter social icons - circle - blue.png" alt="twitter" style="width: 100px;"></a>
+        </div>
+        <div>
+            <a href="https://facebook.com"><img src="img/f_logo_RGB-Blue_58.png" alt="facebook"></a>
+        </div>
+        <div>
+            <a href="https://linkedin.com"><img src="img/LI-In-Bug.png" alt="LinkedIn" style="width: 100px;"></a>
+        </div>
+    </div>
 </body>
 </html>
